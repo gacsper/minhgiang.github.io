@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>VALIDATE FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="action.js"></script>
+</head>
+
+<body>
+    <!-- Validate form có: tên, giới tính, địa chỉ, email, mật khẩu, sở thích -->
+    <form action="" id="form">
+        <div>
+            Họ Tên: <span id="loi_ten" class="error"></span>
+            <input type="text" id="ten" autofocus class="main_input" placeholder="Giang Hieu Minh">
+            <br>
+            <br>
+        </div>
+        Giới tính: <span id="loi_gioi_tinh" class="error"></span>
+        <div class="gioi_tinh">
+            <input type="radio" name="gioi_tinh">Nam
+            <input type="radio" name="gioi_tinh">Nữ
+            <input type="radio" name="gioi_tinh">Khác
+            <br>
+        </div>
+        <br>
+        <div>
+            Địa chỉ: <span id="loi_dia_chi" class="error"></span>
+            <input type="text" name="" id="dia_chi" class="main_input" placeholder="Nhà giam số 7">
+            <br>
+        </div>
+        <br>
+        <div>
+            Email: <span id="loi_email" class="error"></span>
+            <input type="email" name="" id="email" class="main_input" placeholder="example@email.com">
+            <br>
+            <br>
+        </div>
+        <br>
+        <div>
+            Mật khẩu: <span id="loi_mat_khau" class="error"></span>
+            <input type="password" id="mat_khau" class="main_input">
+            <input type="checkbox" onclick="show_pass()">Hiện mật khẩu
+        </div>
+        <br>
+        <div>
+            Sở thích: <span id="loi_so_thich"></span>
+            <select name="" id="so_thich" id="so_thich" class="main_input">
+                <option value="">chơi game</option>
+                <option value="">đá banh</option>
+                <option value="">xem tivi</option>
+            </select>
+        </div>
+        <br>
+        <div class="footer">
+            <button type="submit" id="buttion" class="submit" onclick="return kiem_tra()">Đăng ký</button>
+            <button type="reset" class="reset" onclick="exit()">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
